@@ -1,0 +1,23 @@
+{
+  "name": "com.mcttechnology",
+  "version": "1.0.0",
+  "description": "Notification",
+  "cordova": {
+    "id": "com.mcttechnology",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.3.0"
+    }
+  ],
+  "author": "",
+  "license": "ISC"
+}

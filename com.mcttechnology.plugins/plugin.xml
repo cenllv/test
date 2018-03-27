@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://phonegap.com/ns/plugins/1.0"
+    id="com.mcttechnology"
+    version="1.0.0">
+    <engines>
+        <engine name="cordova" version=">=3.3.0" />
+    </engines>
+    
+    <name>MCTNotificationPlugin</name>
+    <description>Notification</description>
+    
+    <js-module src="www/notificationPlugin.js" name="notificationModel">
+        <clobbers target="notificationModel" />
+    </js-module>
+    
+    <platform name="ios">
+        <source-file src="src/ios/NotificationPlugin.m" />
+        <header-file src="src/ios/NotificationPlugin.h" />
+    
+        <config-file target="config.xml" parent="/widget">
+            
+            <feature name="notificationPlugin">
+                <param name="ios-package" value="NotificationPlugin" />
+            </feature>
+        </config-file>
+    </platform>
+</plugin>
+
